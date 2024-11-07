@@ -15,7 +15,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.1'
+          cpus: '0.12'
           memory: 100M
 
   apir1:
@@ -28,7 +28,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.1'
+          cpus: '0.12'
           memory: 100M
 
   apir2:
@@ -41,7 +41,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.1'
+          cpus: '0.12'
           memory: 100M
 
   apig:
@@ -54,7 +54,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.1'
+          cpus: '0.12'
           memory: 100M
 
   pgadmin4:
@@ -71,7 +71,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.1'
+          cpus: '0.12'
           memory: 100M
 
 
