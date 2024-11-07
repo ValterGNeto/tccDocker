@@ -12,6 +12,11 @@ services:
     restart: always
     ports:
       - 5432:5432
+    deploy:
+      resources:
+        limits:
+          cpus: '0.1'
+          memory: 100M
 
   apir1:
     image: valtergranatoneto/apir1:01
@@ -20,6 +25,11 @@ services:
     depends_on:
       - db
     restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '0.1'
+          memory: 100M
 
   apir2:
     image: valtergranatoneto/apir2:01
@@ -28,6 +38,11 @@ services:
     depends_on:
       - db
     restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '0.1'
+          memory: 100M
 
   apig:
     image: valtergranatoneto/apig:01
@@ -36,6 +51,11 @@ services:
     depends_on:
       - db
     restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '0.1'
+          memory: 100M
 
   pgadmin4:
     image: elestio/pgadmin:latest
@@ -48,6 +68,11 @@ services:
       - "9001:9001"
     volumes:
       - pgadmin_data:/pgadmin4/servers.json
+    deploy:
+      resources:
+        limits:
+          cpus: '0.1'
+          memory: 100M
 
 
 volumes:
