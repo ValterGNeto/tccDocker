@@ -13,31 +13,31 @@ services:
     ports:
       - 5432:5432
 
-  apir1:
-    image: valtergranatoneto/apir1:01
-    ports:
-      - "8081:8080"
-    depends_on:
-      - db
-    restart: always
+  #apir1:
+  #  image: valtergranatoneto/apir1:01
+  #  ports:
+  #    - "8081:8080"
+  #  depends_on:
+  #    - db
+  #  restart: always
 
 
-  apir2:
-    image: valtergranatoneto/apir2:01
-    ports:
-      - "8082:8080"
-    depends_on:
-      - db
-    restart: always
+  #apir2:
+  #  image: valtergranatoneto/apir2:01
+  #  ports:
+  #    - "8082:8080"
+  #  depends_on:
+  #    - db
+  #  restart: always
 
 
-  apig:
-    image: valtergranatoneto/apig:01
-    ports:
-      - "9001:8080"
-    depends_on:
-      - db
-    restart: always
+  #apig:
+  #  image: valtergranatoneto/apig:01
+  #  ports:
+  #    - "9001:8080"
+  #  depends_on:
+  #    - db
+  #  restart: always
 
 
   pgadmin4:
